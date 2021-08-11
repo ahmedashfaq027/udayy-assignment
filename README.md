@@ -1,68 +1,37 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
+# Udayy Assignment - (2 view website navigator)
 
-## Available Scripts
+The assignment is live here: https://gifted-volhard-4dc1e0.netlify.app/
 
-In the project directory, you can run:
+## Explanation:
 
-### `npm start`
+I have made use of React Redux template and react-iframe dependency. I have also used Font Awesome CDN link for font awesome icons.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Login information and URLs is stored in redux. To persist the login state, I have made use of localstorage. As mentioned in the assignment I have mocked the login page. So, you can enter anything for the credentials to login.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+After logging in, User redirects to the main page. Username, Search bar 1, Search bar 2, Logout button are displayed in the Header section of main page. Two react iframes are used in the main page to load the URLs entered in the search bars. 
 
-### `npm test`
+Note: The Views (iFrames) can be collapsed/expanded. The collapse/expand icon is visible when hovered on the view
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+A full qualified URL needs to be entered in the search bar. (or) any search term would do (uses Bing as search engine).
 
-### `npm run build`
+Some Examples to enter are: 
+1. https://codesandbox.io/s/react-iframe-demo-g3vst?file=/src/index.js:208-410
+2. https://www.instahyre.com/ (or) instahyre.com
+3. https://www.naukri.com/ (or) naukri.com
+4. IPL
+5. Latest news
+6. https://aahmed.netlify.app/ (or) aahmed.netlify.app
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+This app is completely responsive and works fine for the resolutions of iPhone 5s/SE (320 x568) and above.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+## Instructions:
+### Run the React App:
+1. Assuming that you have node.js installed, Open a command prompt in the assignment directory.
+2. Run “npm i". This will install all the node modules required for the app.
+3. Run “npm start”. This will bring up the react app on http://localhost:3000.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### About the App:
+1. There are 2 textboxes (Search bars) in the header.
+2. First textbox takes in a complete URL/Search terms and renders the website in the first iFrame in the body section.
+3. Second textbox takes in a complete URL/Search terms and renders the website in the second iFrame in the body section.
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify

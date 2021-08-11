@@ -1,0 +1,10 @@
+.views {
+  flex: 1;
+  display: flex;
+}
+
+@media (max-width: 700px) {
+  .views {
+    flex-direction: column;
+  }
+}

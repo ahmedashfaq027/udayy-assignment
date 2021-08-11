@@ -1,0 +1,132 @@
+.header {
+  height: 10vh;
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__username {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.header__username > p {
+  font-size: 0.9rem;
+}
+
+.header__searchbars {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__searchbars > * {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.header__searchbarsLeft,
+.header__searchbarsRight {
+  padding: 7px 10px;
+  width: 80%;
+  border-radius: 20px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  outline: none;
+  border: none;
+  background-color: white;
+}
+
+.header__searchbarsLeft:focus,
+.header__searchbarsRight:focus {
+  outline: none;
+}
+
+.header__searchbars form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.searchbar__submit {
+  padding: 7px 10px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border: none;
+  background-color: lightgray;
+  cursor: pointer;
+  outline-width: 0;
+
+  /* display: none; */
+}
+
+.header__logout {
+  margin: 10px;
+  position: relative;
+}
+
+.header__logoutTooltip {
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 0.9rem;
+  display: none;
+  z-index: 2;
+}
+
+.header__logout > h4 {
+  padding: 10px;
+  border-radius: 50%;
+  font-size: 1.5rem;
+}
+
+.header__logout > h4:hover {
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.header__logout:hover .header__logoutTooltip {
+  display: block;
+}
+
+@media (max-width: 700px) {
+  .header {
+    min-height: 12vh;
+  }
+
+  .header__searchbars {
+    flex-direction: column;
+  }
+
+  .header__searchbars > * {
+    width: 100%;
+  }
+
+  .header__searchbarsLeft,
+  .header__searchbarsRight {
+    width: 100%;
+  }
+
+  form:nth-last-child(1) {
+    margin-top: 7px;
+  }
+
+  .searchbar__submit {
+    display: block;
+  }
+
+  .header__username {
+    padding: 10px;
+  }
+
+  .header__logout > h4 {
+    padding: 6px;
+    font-size: 1.4rem;
+  }
+}
